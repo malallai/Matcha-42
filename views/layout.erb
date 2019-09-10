@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || SiteConfig.title %></title>
+    <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/bootstrap.js"></script>
+
+  </head>
+  <body>
+
+    <%= yield %>
+
+    <script src="/javascript/script.js"></script>
+    <footer>
+      <p>&copy; <%= Date.today.year %> <%= SiteConfig.author %></p>
+    </footer>
+  </body>
+</html>
