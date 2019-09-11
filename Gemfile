@@ -1,15 +1,17 @@
 # frozen_string_literal: true
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'bundler'
+gem 'dotenv'
+gem 'erubis'
+gem 'mysql2'
+gem 'rake'
+gem 'require_all'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'erubis'
-gem 'rake'
-gem 'dotenv'
 
 group :production do
-  gem "puma"
+  gem 'puma'
 end
 
 group :development do
@@ -18,6 +20,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec', :require => 'spec'
   gem 'rack-test'
+  gem 'rspec', require: 'spec'
 end
