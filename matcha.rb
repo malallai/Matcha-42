@@ -12,6 +12,4 @@ helpers do
 end
 
 # index page
-get '/' do
-  erb :index
-end
+load 'routes.rb'
