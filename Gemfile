@@ -9,12 +9,14 @@ gem 'rake'
 gem 'require_all'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sinatra-flash'
 
 group :production do
   gem 'puma'
 end
 
 group :development do
+  gem 'better_errors'
   gem 'pry'
   gem 'rubocop'
 end
